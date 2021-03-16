@@ -14,16 +14,16 @@
 # limitations under the License.
 
 # Create the kfp-util docker container image
-docker build -t gcr.io/ml-cicd-template/kfp-util:latest .
-gcloud docker -- push gcr.io/ml-cicd-template/kfp-util:latest
+docker build -t gcr.io/confluent-98f26/kfp-util:latest .
+gcloud docker -- push gcr.io/confluent-98f26/kfp-util:latest
 
 # Set substitutions
 SUBSTITUTIONS=\
-_REPO_URL='https://github.com/ksalama/kubeflow-examples.git',\
-_PROJECT_ID='ml-cicd-template',\
-_COMPUTE_ZONE='europe-west1-b',\
-_CLUSTER_NAME='kubeflow-cluster',\
-_GCS_LOCATION='ml-cicd-template/helloworld/pipelines',\
+_REPO_URL='https://github.com/Ashwin-Hashedin/kubeflow-examples.git',\
+_PROJECT_ID='confluent-98f26',\
+_COMPUTE_ZONE='us-east1-b',\
+_CLUSTER_NAME='cluster-2',\
+_GCS_LOCATION='confluent-98f26/helloworld/pipelines',\
 _EXPERIMENT_NAME='helloworld-dev',\
 _TAG='latest'
 
