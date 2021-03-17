@@ -23,7 +23,7 @@ _REPO_URL='https://github.com/Ashwin-Hashedin/kubeflow-examples.git',\
 _PROJECT_ID='confluent-98f26',\
 _COMPUTE_ZONE='us-east1-b',\
 _CLUSTER_NAME='cluster-2',\
-_GCS_LOCATION='confluent-98f26_cloudbuild/helloworld/pipelines',\
+_GCS_LOCATION='confluent-98f26_cloudbuild/pipelines',\
 _EXPERIMENT_NAME='helloworld-dev',\
 _TAG='latest'
 
